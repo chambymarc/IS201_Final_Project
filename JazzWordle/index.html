@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jazz Wordle</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="description" content="Jazz-themed Wordle clone featuring jazz musicians, albums, and standards.">
+  </head>
+<body>
+  <main class="container">
+    <h1>Jazz Wordle</h1>
+    <p class="subtitle">Guess the 5-letter jazz-themed word in 6 tries.</p>
+
+    <div id="message" class="message" aria-live="polite"></div>
+
+    <div id="board" class="board"></div>
+
+    <div id="keyboard" class="keyboard"></div>
+
+    <div class="controls">
+      <label for="wordLength">Length:</label>
+      <select id="wordLength" aria-label="Word length">
+        <option value="5" selected>5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+      </select>
+      <button id="newGame">New Game</button>
+    </div>
+
+    <p class="credit">Jazz wordlist includes musician names, albums and standards.</p>
+  </main>
+
+  <script src="js/words.js"></script>
+  <script src="js/allowed_words.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
